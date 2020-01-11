@@ -26,3 +26,4 @@ E:\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.AssemblyInfo.cs
 E:\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.RazorTargetAssemblyInfo.cache
 E:\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.dll
 E:\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.pdb
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.xml
