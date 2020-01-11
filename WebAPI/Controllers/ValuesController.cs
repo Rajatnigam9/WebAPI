@@ -71,13 +71,13 @@ namespace WebAPI.Controllers
                 {
                     new Claim(JwtRegisteredClaimNames.Sub,value.UserName)
                 };
-                var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:SigningKey"]));
+                var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(value.Password));
                 int expiry=Convert.ToInt32(Configuration["Jwt:ExpiryInMinutes"]);
                 var token = new JwtSecurityToken(
                     issuer: Configuration["Jwt:Site"],
                     audience: Configuration["Jwt:Site"],
                     expires: DateTime.Now.AddMinutes(330+expiry),
-                    signingCredentials: new SigningCredentials(signingKey, SecurityAlgorithms.HmacSha256));
+                    signingCredentials: new SigningCredentials(signingKey, SecurityAlgorithms.DesEncryption));
                 return Ok(
                     new
                     {

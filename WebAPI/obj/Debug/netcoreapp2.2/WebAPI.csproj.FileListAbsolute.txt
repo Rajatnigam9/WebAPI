@@ -12,3 +12,17 @@ D:\RNigam\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.RazorTargetAssemblyInfo.c
 D:\RNigam\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.pdb
 D:\RNigam\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.dll
 D:\RNigam\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.pdb
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.deps.json
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.runtimeconfig.json
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.runtimeconfig.dev.json
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.dll
+E:\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\WebAPI.pdb
+E:\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csprojAssemblyReference.cache
+E:\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csproj.CoreCompileInputs.cache
+E:\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.RazorAssemblyInfo.cache
+E:\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.RazorAssemblyInfo.cs
+E:\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.AssemblyInfoInputs.cache
+E:\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.AssemblyInfo.cs
+E:\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.RazorTargetAssemblyInfo.cache
+E:\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.dll
+E:\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.pdb
