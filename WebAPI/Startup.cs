@@ -18,6 +18,8 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.IdentityModel.Logging;
 using Swashbuckle.AspNetCore.Swagger;
+using System.Reflection;
+using System.IO;
 
 namespace WebAPI
 {
@@ -38,6 +40,26 @@ namespace WebAPI
             {
                 c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
             });
+
+            //services.AddSwaggerGen(x =>
+            //{
+            //    x.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info
+            //    {
+            //        Version = "v1",
+            //        Title = "Carrier Based Premium Report API Documentation",
+            //        Description = "This documentation provides information regarding Carrier based Premium report API",
+            //        TermsOfService = "None",
+            //        Contact = new Swashbuckle.AspNetCore.Swagger.Contact
+            //        {
+            //            Name = "Cogitate's - Producer Portal",
+            //            Url = ""
+            //        }
+            //    });
+            //    // Set the comments path for the Swagger JSON and UI.
+            //    string xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+            //    string xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+            //    x.IncludeXmlComments(xmlPath);
+            //});
 
             services.AddDbContext<DBContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddIdentity<IdentityUser, IdentityRole>(option =>
@@ -89,7 +111,8 @@ namespace WebAPI
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("../swagger/v1/swagger.json", "My API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.RoutePrefix = "swagger";
             });
             app.UseHttpsRedirection();
             app.UseAuthentication();
